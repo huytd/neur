@@ -1,4 +1,4 @@
-var Neural = require('neur') || require('../index');
+var Neural = require('../index');
 
 var color = Neural().model({ r: 0, g: 0, b: 0 });
 var guess = Neural().model({ black: 0, white: 0 });
@@ -20,4 +20,4 @@ var result = Neural()
     ])
     .predict(color.in({ r: 1, g: 0.4, b: 0 }));
 
-console.log(guess.out(result));
+console.log(guess.out(result)); // { black: ~0, white: ~1 }
