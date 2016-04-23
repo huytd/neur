@@ -15,10 +15,8 @@
    "nn"
   ],
   "repository": {
-    { 
-      "type" : "git",
-      "url" : "https://github.com/huytd/neur.git"
-    }
+    "type" : "git",
+    "url" : "https://github.com/huytd/neur.git"
   },
   "author": "Huy Tran",
   "license": "MIT",
