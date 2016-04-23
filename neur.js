@@ -98,3 +98,24 @@ Neural.prototype.predict = function (data) {
     var results = this.forward({ input: Matrix([data]) });
     return results.outputResult[0];
 };
+
+Neural.prototype.model = function (input) {
+    return {
+        _ref: input,
+        in: function(src) {
+            var output = [];
+            for (key in src) {
+                output = output.concat(src[key]);
+            }
+            return output;
+        },
+        out: function(src) {
+            var output = Object.assign({}, this._ref);
+            var keys = Object.keys(output);
+            for (var i = 0; i < src.length; i++) {
+                output[keys[i]] = src[i];
+            }
+            return output;
+        }
+    }
+};
