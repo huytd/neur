@@ -1,20 +1,26 @@
 {
   "name": "neur",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple neural network implementation",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "keywords": [
+   "machine-learning",
+   "neural-network",
+   "learning",
+   "sigmoid",
+   "network",
+   "neuron",
+   "neural",
+   "mind",
+   "nn"
+ ],
+  "author": "Huy Tran",
   "license": "MIT",
   "dependencies": {
     "node-matrix": "^0.1.1",
     "samples": "0.0.2",
     "sigmoid": "0.0.1",
-    "sigmoid-prime": "0.0.1"
-  },
-  "devDependencies": {
+    "sigmoid-prime": "0.0.1",
     "sample": "0.0.2"
   }
 }
